@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../actividad2"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "angular"
+	}
+}
