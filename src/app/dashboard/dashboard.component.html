@@ -1,0 +1,12 @@
+<!-- Encabezado h2 -->
+<h2>Top Ciudades</h2>
+<!-- Div que contiene el menu de ciudades -->
+<div class="heroes-menu">
+  <!-- Utiliza la directiva *ngFor para iterar sobre cada héroe en el arreglo 'heroes' -->
+  <a *ngFor="let hero of heroes"
+    
+    routerLink="/detail/{{hero.id}}">
+    <!-- Muestra el nombre de la ciudad como texto del enlace -->
+    {{hero.name}}
+  </a>
+</div>

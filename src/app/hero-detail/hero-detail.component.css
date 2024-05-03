@@ -1,0 +1,45 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    color: #435960;
+    font-weight: bold;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+
+
+
+
+
+/* Estilo para el contenedor principal */
+.hero-details-container {
+  display: flex; /* Usa un diseño de caja flexible */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/* Estilo para la imagen del héroe */
+.IMG-hero {
+  width: 300px; /* Ancho de la imagen */
+  height: 300px; /* Alto de la imagen */
+  object-fit: cover; /* Controla cómo se ajusta la imagen dentro de su contenedor */
+  margin-bottom: 10px; /* Margen en la parte inferior para separar la imagen de los detalles */
+}
+

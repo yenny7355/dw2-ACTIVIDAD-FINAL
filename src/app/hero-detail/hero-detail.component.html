@@ -1,0 +1,33 @@
+<div *ngIf="hero">
+
+    <h2>Detalles de {{hero.name | uppercase}}</h2>
+    
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Nombre del héroe: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="nombre">
+    </div>
+  
+</div>
+<!-- en esta parte ocupamos el ngIf que es un directiva similar a ngFor, pero lo que hará este if es
+  que le dice a Angular que haga la selección solo cuando la selectedHero se define después de haber sido seleccionado
+  cuando se le hace un click en un héroe-->
+  <div *ngIf="hero" class="hero-details-container">
+    <!-- En esta parte simplemente se convierte el nombre del héroe seleccionado en mayúsculas-->
+    <h2>Bienvenido A!   {{  hero.name | uppercase }} </h2>
+    <!-- Div con los detalles del héroe -->
+    <div class="hero-details">
+      <!-- Mostrar el ID del héroe -->
+      <div><span>ID: </span>{{ hero.id }}</div>
+      <!-- Sección para mostrar el nombre del héroe y permitir la edición -->
+      <div>
+        <label for="hero-name">Nombre del pais o Ciudad: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+      </div>
+      <!-- Botón para retroceder -->
+      <button type="button" (click)="goBack()"><span>Atras</span></button>
+    </div>
+    <!-- La imagen del héroe con la clase image-hero para aplicar estilos CSS -->
+    <img class="IMG-hero" [src]="hero.IMG" alt="{{ '' }}">
+  </div>
+  
